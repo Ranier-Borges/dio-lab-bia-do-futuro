@@ -8,6 +8,22 @@
   "patrimonio_total": 15000.00,
   "reserva_emergencia_atual": 10000.00,
   "aceita_risco": false,
+
+  "saldo_atual_conta": 2511.10,
+  "nivel_organizacao": "intermediario",
+
+  "preferencias_aprendizado": {
+    "formato": "explicações curtas e diretas",
+    "gosta_de_exemplos": true,
+    "prefere_visual": false
+  },
+
+  "comportamento_financeiro": {
+    "tendencia_atraso_contas": false,
+    "gastos_impulsivos": "moderado",
+    "controle_orcamentario": "baixo"
+  },
+
   "metas": [
     {
       "meta": "Completar reserva de emergência",
@@ -18,6 +34,26 @@
       "meta": "Entrada do apartamento",
       "valor_necessario": 50000.00,
       "prazo": "2027-12"
+    }
+  ],
+
+  "metas_operacionais": [
+    {
+      "meta": "Reduzir gastos variáveis em 10%",
+      "prazo": "2025-12"
+    },
+    {
+      "meta": "Organizar contas fixas até o dia 10",
+      "prazo": "2025-11"
+    }
+  ],
+
+  "dividas": [
+    {
+      "tipo": "cartao_credito",
+      "valor": 1200.00,
+      "juros_mensal": 12.00,
+      "vencimento": "2025-10-15"
     }
   ]
 }
