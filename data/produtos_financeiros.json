@@ -5,7 +5,10 @@
     "risco": "baixo",
     "rentabilidade": "100% da Selic",
     "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
+    "indicado_para": "Reserva de emergência e iniciantes",
+    "complexidade": "baixa",
+    "quando_explicar": "Quando o usuário perguntar sobre segurança ou liquidez",
+    "observacao_didatica": "Explicar como funciona a taxa Selic e liquidez D+0"
   },
   {
     "nome": "CDB Liquidez Diária",
@@ -13,7 +16,10 @@
     "risco": "baixo",
     "rentabilidade": "102% do CDI",
     "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
+    "indicado_para": "Quem busca segurança com rendimento diário",
+    "complexidade": "baixa",
+    "quando_explicar": "Quando o usuário perguntar sobre alternativas ao Tesouro Selic",
+    "observacao_didatica": "Explicar o que é CDI e liquidez diária"
   },
   {
     "nome": "LCI/LCA",
@@ -21,7 +27,10 @@
     "risco": "baixo",
     "rentabilidade": "95% do CDI",
     "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "indicado_para": "Quem pode esperar 90 dias (isento de IR)",
+    "complexidade": "média",
+    "quando_explicar": "Quando o usuário perguntar sobre isenção de imposto",
+    "observacao_didatica": "Explicar carência e isenção de IR"
   },
   {
     "nome": "Fundo Multimercado",
@@ -29,7 +38,10 @@
     "risco": "medio",
     "rentabilidade": "CDI + 2%",
     "aporte_minimo": 500.00,
-    "indicado_para": "Perfil moderado que busca diversificação"
+    "indicado_para": "Perfil moderado que busca diversificação",
+    "complexidade": "alta",
+    "quando_explicar": "Somente quando o usuário pedir",
+    "observacao_didatica": "Explicar que oscila e não é adequado para reserva"
   },
   {
     "nome": "Fundo de Ações",
@@ -37,6 +49,9 @@
     "risco": "alto",
     "rentabilidade": "Variável",
     "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "indicado_para": "Perfil arrojado com foco no longo prazo",
+    "complexidade": "alta",
+    "quando_explicar": "Somente quando o usuário pedir",
+    "observacao_didatica": "Explicar volatilidade e risco"
   }
 ]
