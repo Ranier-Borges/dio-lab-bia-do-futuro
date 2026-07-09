@@ -1,71 +1,114 @@
-# Base de Conhecimento – **FinanEduc**
+# Base de Conhecimento
 
 > [!TIP]
 > **Prompt usado para esta etapa:**
 > 
-> Organize a base de conhecimento do agente "Edu" usando os 4 arquivos em anexo. Explique pra que serve cada arquivo e monte um exemplo de contexto formatado que será enviado pro LLM. Preencha o template abaixo.
+> Organize a base de conhecimento do agente "FinanEduc" usando os 4 arquivos em anexo. Explique pra que serve cada arquivo e monte um exemplo de contexto formatado que será enviado pro LLM. Preencha o template abaixo.
 >
-> [cole ou anexe o template `02-base-conhecimento.md` para contexto
+> [cole ou anexe o template `02-base-conhecimento.md` pra contexto]
+
 
 ## 🎯 Objetivo da Base de Conhecimento
 
 A base de conhecimento do **FinanEduc** foi construída para permitir que o agente:
 
-- Entenda o **fluxo de caixa real** do usuário  
-- Analise entradas, saídas e categorias de gastos  
-- Personalize explicações conforme o perfil financeiro  
-- Utilize o histórico para manter continuidade no atendimento  
-- Ensine conceitos de forma simples, informal e didática  
-- **Sem recomendar investimentos** — apenas educação e organização financeira  
+- Analise o **fluxo de caixa real** do usuário  
+- Entenda padrões de gastos, entradas e comportamento financeiro  
+- Personalize explicações conforme perfil, metas e preferências  
+- Ensine organização financeira de forma simples e didática  
+- Forneça continuidade no atendimento com base no histórico  
+- **Sem recomendar investimentos** — apenas educação e controle financeiro  
+
+Com a expansão dos dados, o FinanEduc agora possui uma visão **mais completa**, permitindo análises mais inteligentes e explicações mais contextualizadas.
 
 ---
 
-## 📁 Dados Utilizados
+# 📁 Dados Utilizados 
 
 | Arquivo | Formato | Para que serve no FinanEduc? |
 |---------|---------|------------------------------|
-| `transacoes.csv` | CSV | Base principal para análise de fluxo de caixa: entradas, saídas, categorias e comportamento financeiro mensal. |
-| `produtos_financeiros.json` | JSON | Catálogo de produtos financeiros **somente para fins educativos** — o agente explica conceitos, mas não recomenda nenhum produto. |
-| `perfil_investidor.json` | JSON | Permite personalizar explicações conforme o perfil, metas e situação financeira do usuário. |
-| `historico_atendimento.csv` | CSV | Ajuda o agente a manter continuidade, lembrando temas já explicados e evitando repetição desnecessária. |
+| `transacoes.csv` | CSV | Análise completa do fluxo de caixa, incluindo vencimentos, recorrência, saldo após cada transação e classificação fixo/variável. |
+| `produtos_financeiros.json` | JSON | Catálogo educacional com complexidade, contexto de explicação e observações didáticas. |
+| `perfil_investidor.json` | JSON | Perfil completo do usuário, incluindo comportamento financeiro, preferências de aprendizado, metas operacionais e dívidas. |
+| `historico_atendimento.csv` | CSV | Histórico detalhado com satisfação, tempo de atendimento, tags de aprendizado e nível de entendimento. |
 
 ---
 
-## 🔧 Melhorias Implementadas
+# 🔧 Sobre os Dados
 
-### ✔️ Reorganização por Função Educacional
-Os dados foram agrupados por **função pedagógica**, facilitando prompts mais eficientes.
+## ✔️ 1. **Fluxo de Caixa**
+O arquivo `transacoes.csv` inclui:
 
-### ✔️ Criação de Blocos de Contexto
-Cada arquivo foi transformado em um bloco pronto para ser injetado no LLM.
+- vencimento das contas  
+- recorrência (mensal, semanal, eventual)  
+- classificação fixo/variável  
+- saldo após cada transação  
+- visão temporal mais precisa  
 
-### ✔️ Padronização das Categorias
-As categorias do fluxo de caixa foram padronizadas:
+Isso permite ao FinanEduc:
 
-- moradia  
-- alimentação  
-- transporte  
-- saúde  
-- lazer  
-- receita  
-
-### ✔️ Indicadores Financeiros Derivados
-O agente consegue calcular:
-
-- total de entradas  
-- total de saídas  
-- saldo do mês  
-- gastos por categoria  
-- percentual de cada categoria  
-
-### ✔️ Contexto Sintético
-Criação de um contexto resumido e otimizado para consumo de tokens.
+- ensinar organização mensal  
+- identificar gargalos financeiros  
+- explicar impacto de gastos fixos vs variáveis  
+- prever fluxo de caixa futuro  
 
 ---
 
-## 🧩 Estratégia de Integração
+## ✔️ 2. **Perfil Financeiro **
+O arquivo `perfil_investidor.json` inclui:
 
-### Como os dados são carregados?
+- saldo atual da conta  
+- nível de organização financeira  
+- comportamento financeiro (atrasos, impulsividade, controle)  
+- preferências de aprendizado  
+- metas operacionais (curto prazo)  
+- dívidas detalhadas  
+
+Isso permite ao agente:
+
+- adaptar o tom e a didática  
+- explicar conceitos conforme o estilo do usuário  
+- ensinar rotinas financeiras  
+- contextualizar explicações com base em dificuldades reais  
+
+---
+
+## ✔️ 3. **Produtos Financeiros com Contexto Educacional**
+O arquivo `produtos_financeiros.json` inclui:
+
+- complexidade do produto  
+- quando explicar  
+- observações didáticas  
+- exemplos práticos  
+
+Isso permite ao FinanEduc:
+
+- ensinar apenas quando necessário  
+- evitar sobrecarga de informação  
+- reforçar que não recomenda investimentos  
+
+---
+
+## ✔️ 4. **Histórico de Atendimento Inteligente**
+O arquivo `historico_atendimento.csv` inclui:
+
+- satisfação do usuário  
+- tempo de atendimento  
+- tags de aprendizado  
+- nível de entendimento  
+
+Isso permite ao agente:
+
+- evitar repetição  
+- reforçar temas não compreendidos  
+- manter continuidade natural  
+- adaptar explicações conforme histórico  
+
+---
+
+# 🧩 Estratégia de Integração
+
+## Como os dados são carregados?
 
 ```python
 import pandas as pd
@@ -77,7 +120,7 @@ historico = pd.read_csv('./data/historico_atendimento.csv')
 produtos = json.load(open('./data/produtos_financeiros.json'))
 ```
 
-### Como os dados são usados no prompt?
+## Como os dados são usados no prompt?
 
 O FinanEduc utiliza os dados de forma **contextual**, sempre com foco em:
 
@@ -85,42 +128,47 @@ O FinanEduc utiliza os dados de forma **contextual**, sempre com foco em:
 - ensinar organização financeira  
 - mostrar exemplos práticos  
 - reforçar limites éticos  
+- adaptar explicações ao perfil e comportamento  
 
 Os dados podem ser enviados no **system prompt** ou como **contexto dinâmico**.
 
 ---
 
-## 📦 Dados Originais (com citações obrigatórias)
+# 📦 Dados Originais
 
 ### Trecho de `transacoes.csv`
-> “2025-10-01,Salário,receita,5000.00,entrada”  
-> “2025-10-02,Aluguel,moradia,1200.00,saida”
+> “2025-10-01,Salário,receita,5000.00,entrada,fixo,2025-10-01,mensal,5000.00”  
+> “2025-10-02,Aluguel,moradia,1200.00,saida,fixo,2025-10-05,mensal,3800.00”
 
 ### Trecho de `produtos_financeiros.json`
-> “Tesouro Selic”, “categoria”: “renda_fixa”, “risco”: “baixo”  
-> “CDB Liquidez Diária”, “rentabilidade”: “102% do CDI”
+> “complexidade”: “baixa”, “quando_explicar”: “Quando o usuário perguntar sobre segurança ou liquidez”  
+> “observacao_didatica”: “Explicar o que é CDI e liquidez diária”
 
 ### Trecho de `perfil_investidor.json`
-> “nome”: “João Silva”, “renda_mensal”: 5000.00  
-> “objetivo_principal”: “Construir reserva de emergência”
+> “preferencias_aprendizado”: { "formato": "explicações curtas e diretas" }  
+> “dividas”: [{ "tipo": "cartao_credito", "valor": 1200.00 }]
 
 ### Trecho de `historico_atendimento.csv`
-> “2025-10-01,chat,Tesouro Selic,Cliente pediu explicação…”  
-> “2025-10-12,chat,Metas financeiras,Cliente acompanhou…”
+> “satisfacao: 4”, “tags: renda_fixa, liquidez”, “entendimento_usuario: sim”
 
 ---
 
-## 🧠 Exemplo de Contexto Montado
-
+# 🧠 Exemplo de Contexto Montado 
 ```
 CLIENTE:
 - Nome: João Silva
 - Idade: 32
 - Profissão: Analista de Sistemas
 - Renda mensal: R$ 5.000
-- Objetivo principal: Construir reserva de emergência
-- Reserva atual: R$ 10.000 (meta: R$ 15.000)
-- Aceita risco: Não
+- Saldo atual: R$ 2.511,10
+- Nível de organização: Intermediário
+- Preferências: Explicações curtas, gosta de exemplos
+- Comportamento: Gastos impulsivos moderados, sem atrasos
+
+METAS:
+- Reserva de emergência: R$ 10.000 / R$ 15.000
+- Entrada do apartamento: R$ 50.000 (2027-12)
+- Metas operacionais: Reduzir gastos variáveis em 10%
 
 FLUXO DE CAIXA (Outubro/2025):
 - Entradas: R$ 5.000
@@ -128,22 +176,26 @@ FLUXO DE CAIXA (Outubro/2025):
 - Saldo: R$ 2.511,10
 
 GASTOS POR CATEGORIA:
-- Moradia: R$ 1.380
-- Alimentação: R$ 570
-- Transporte: R$ 295
-- Saúde: R$ 188
-- Lazer: R$ 55,90
+- Moradia: R$ 1.380 (fixo)
+- Alimentação: R$ 570 (variável)
+- Transporte: R$ 295 (variável)
+- Saúde: R$ 188 (misto)
+- Lazer: R$ 55,90 (fixo)
+
+DÍVIDAS:
+- Cartão de crédito: R$ 1.200, juros 12% ao mês
 
 HISTÓRICO DE ATENDIMENTO:
-- Já aprendeu sobre: Tesouro Selic, CDB, metas financeiras
-- Último atendimento: Atualização cadastral (25/10)
+- Temas já explicados: Tesouro Selic, CDB, metas financeiras
+- Satisfação média: 4.6
+- Entendimento: Alto
 
 PRODUTOS PARA ENSINO (somente explicação):
-- Tesouro Selic (renda fixa, risco baixo)
-- CDB Liquidez Diária (renda fixa, risco baixo)
-- LCI/LCA (renda fixa, risco baixo)
-- Fundo Multimercado (renda variável, risco médio)
-- Fundo de Ações (renda variável, risco alto)
+- Tesouro Selic (complexidade baixa)
+- CDB Liquidez Diária (complexidade baixa)
+- LCI/LCA (complexidade média)
+- Fundo Multimercado (complexidade alta)
+- Fundo de Ações (complexidade alta)
 
 REGRAS DO AGENTE:
 - Não recomenda investimentos
@@ -152,3 +204,6 @@ REGRAS DO AGENTE:
 ```
 
 ---
+- O system prompt final do agente FinanEduc  
+
+Só me avisar.
