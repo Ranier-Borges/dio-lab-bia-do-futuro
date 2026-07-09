@@ -1,11 +1,11 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+data,descricao,categoria,valor,tipo,fixo_ou_variavel,vencimento,recorrencia,saldo_apos_transacao
+2025-10-01,Salário,receita,5000.00,entrada,fixo,2025-10-01,mensal,5000.00
+2025-10-02,Aluguel,moradia,1200.00,saida,fixo,2025-10-05,mensal,3800.00
+2025-10-03,Supermercado,alimentacao,450.00,saida,variavel,,semanal,3350.00
+2025-10-05,Netflix,lazer,55.90,saida,fixo,2025-10-10,mensal,3294.10
+2025-10-07,Farmácia,saude,89.00,saida,variavel,,eventual,3205.10
+2025-10-10,Restaurante,alimentacao,120.00,saida,variavel,,eventual,3085.10
+2025-10-12,Uber,transporte,45.00,saida,variavel,,eventual,3040.10
+2025-10-15,Conta de Luz,moradia,180.00,saida,fixo,2025-10-20,mensal,2860.10
+2025-10-20,Academia,saude,99.00,saida,fixo,2025-10-20,mensal,2761.10
+2025-10-25,Combustível,transporte,250.00,saida,variavel,,eventual,2511.10
