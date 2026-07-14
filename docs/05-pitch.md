@@ -21,4 +21,4 @@ E o melhor: roda 100% local, sem custo e sem enviar seus dados para nenhum servi
 
 ## Link do Vídeo
 
-> [Link do vídeo]
+> [https://drive.google.com/drive/folders/17a_0iS9-AveInWfkvFvMdmwg_Yzfi1Au?usp=sharing]
