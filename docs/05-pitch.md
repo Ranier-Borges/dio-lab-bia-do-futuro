@@ -1,44 +1,24 @@
-# Pitch (3 minutos)
+## Roteiro do FinanEduc
 
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
- 
-## Roteiro Sugerido
+### 🎯 Problema 
+> “A maioria das pessoas não sabem organizar suas contas, acompanhar vencimentos ou entender o próprio fluxo de caixa. Isso gera atrasos, juros, estresse e decisões financeiras ruins. Muita gente quer aprender, mas não sabe por onde começar — e tem receio de fazer ‘perguntas básicas’.”
 
-### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+### 💡 Solução 
+> “O FinanEduc é um educador financeiro focado exclusivamente em fluxo de caixa, contas a pagar e recebimentos.
+Ele usa os seus próprios dados para explicar conceitos de forma simples e prática.
+Não recomenda investimentos — só educa.
+É como ter um professor particular de organização financeira disponível 24h, que te ajuda a entender seu dinheiro sem complicação.”
 
-[Sua descrição aqui]
+### 📱 Demo 
+> - "Quanto gastei com alimentação este mês?"
+> - "quais contas vencem primeiro?"
 
-### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
-
-[Sua descrição aqui]
-
-### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[Descreva o que será mostrado]
-
-### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
-
-[Sua descrição aqui]
-
----
-
-## Checklist do Pitch
-
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
+### ✨ Diferencial 
+> “Diferente de chatbots genéricos, o FinanEduc usa SEUS dados reais para ensinar. Isso torna o aprendizado concreto e personalizado.
+E o melhor: roda 100% local, sem custo e sem enviar seus dados para nenhum servidor externo.”
 
 ---
 
 ## Link do Vídeo
 
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+> [Link do vídeo]
