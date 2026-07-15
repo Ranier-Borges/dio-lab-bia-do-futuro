@@ -13,6 +13,13 @@ Não recomenda investimentos — só educa.
 > - "Quanto gastei com alimentação este mês?"
 > - "quais contas vencem primeiro?"
 
+<img width="1719" height="820" alt="image" src="https://github.com/user-attachments/assets/a03eded6-78ae-425b-b2e6-5695f4f62211" />
+
+<img width="1902" height="807" alt="image" src="https://github.com/user-attachments/assets/8b3e6378-54b4-493d-833e-6cc0916f745b" />
+
+<img width="1888" height="805" alt="image" src="https://github.com/user-attachments/assets/68b9a1ed-45d5-40d4-bf25-c4342e7a108b" />
+
+
 ### ✨ Diferencial 
 > “Diferente de chatbots genéricos, o FinanEduc usa SEUS dados reais para ensinar. Isso torna o aprendizado concreto e personalizado.
 E o melhor: roda 100% local, sem custo e sem enviar seus dados para nenhum servidor externo.”
