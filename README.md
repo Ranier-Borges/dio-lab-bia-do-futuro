@@ -34,7 +34,7 @@ flowchart TD
 
 **Stack:**
 - Interface: Streamlit
-- LLM: Ollama (modelo local `gpt-oss`)
+- LLM: Ollama (modelo local `gemma2:2b`)
 - Dados: JSON/CSV mockados
 
 ---
@@ -77,7 +77,7 @@ Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alim
 
 ```bash
 # Baixar em: ollama.com
-ollama pull gpt-oss
+ollama pull gemma2:2b
 ollama serve
 ```
 
@@ -87,7 +87,7 @@ ollama serve
 pip install streamlit pandas requests
 ```
 
-### 3. Rodar o Edu
+### 3. Rodar o FinanEduc
 
 ```bash
 streamlit run src/app.py
