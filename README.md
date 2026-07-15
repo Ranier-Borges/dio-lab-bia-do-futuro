@@ -77,7 +77,7 @@ Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alim
 
 ```bash
 # Baixar em: ollama.com
-ollama pull gemma2:2b
+ollama run gemma2:2b
 ollama serve
 ```
 
