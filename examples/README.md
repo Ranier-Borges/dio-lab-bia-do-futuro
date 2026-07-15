@@ -1,20 +1,8 @@
-# Exemplos e Referências
-
-Esta pasta contém exemplos de implementação para cada etapa do desafio.
-
-## Vídeos de Referência
-
-> 🎬 Em breve serão disponibilizados vídeos demonstrando a implementação completa de cada etapa, com foco no raciocínio por trás de cada decisão.
-
-| Etapa | Descrição | Link |
-|-------|-----------|------|
-| Documentação | Como definir o caso de uso e arquitetura | [em breve] |
-| Base de Conhecimento | Como usar os dados mockados | [em breve] |
-| Prompts | Como criar prompts eficazes | [em breve] |
-| Aplicação | Como criar o chatbot funcional | [em breve] |
-| Métricas | Como avaliar seu agente | [em breve] |
-| Pitch | Como apresentar sua solução | [em breve] |
-
-## Exemplo de Implementação Simples
-
-Confira na pasta `src/` um exemplo básico de estrutura de aplicação usando Streamlit.
+# Interface com o FinanEduc
+---
+<img width="960" height="857" alt="image" src="https://github.com/user-attachments/assets/4bf2bfcc-1d6b-47b7-a506-013d0ccd7d1c" />
+---
+<img width="865" height="723" alt="image" src="https://github.com/user-attachments/assets/7b1f8457-b384-498c-bdc4-0a37fbedd47a" />
+---
+<img width="886" height="870" alt="image" src="https://github.com/user-attachments/assets/c554655a-cbb7-468d-a77d-3c88601bae24" />
+---
